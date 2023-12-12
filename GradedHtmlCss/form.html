@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+
+  </head>
+  <body>
+    <section id="main">
+      <div id="blog">
+        <div id="formContainer">
+          <h1>1. Your Contact Details</h1>
+          <input type="text" placeholder="Full Name" />
+          <input type="text" placeholder="Patient Id if exists" />
+          <br />
+          <input type="text" placeholder="Contact Number" />
+          <input type="text" placeholder="Email Id" />
+
+          <h1>2. Address</h1>
+          <input type="text" placeholder="House No" />
+          <input type="text" placeholder="Street" /><br />
+          <input type="text" placeholder="Area" />
+
+          <h3>District</h3>
+
+          <select name="district" id="district">
+            <option value="choose">Choose option</option>
+            <option value="rural">Rural</option>
+            <option value="urban">Urban</option>
+          </select>
+          <h1>3. Choose the Test Type</h1>
+          <p>(Check atleast one box without fail)</p>
+
+          <input type="checkbox" id="i1" name="c1" value="CBC" />
+          <label for="i1"> CBC</label><br />
+          <input type="checkbox" id="i2" name="c2" value="Complete_Urine" />
+          <label for="i2"> Complete Urine</label><br />
+          <input type="checkbox" id="i3" name="c3" value="Lipid_Profile" />
+          <label for="i3"> Lipid Profile</label><br />
+          <input type="checkbox" id="i4" name="c4" value="TSH" />
+          <label for="i4">Thyroid Stimulating Hormone(TSH)</label><br />
+          <input type="checkbox" id="i5" name="c5" value="Glucose_Test" />
+          <label for="i5">Glucose Test</label><br /><br />
+
+          <h1>4. Do you want a hard copy of the report also?</h1>
+          <div class="symbol-container">
+            <input
+              type="radio"
+              id="option1"
+              name="options"
+              class="circular-radio"
+            />
+            <label class="radio-label" for="option1">Yes</label
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="radio"
+              id="option2"
+              name="options"
+              class="circular-radio"
+            />
+            <label class="radio-label" for="option2">No</label>
+          </div>
+
+          <h1>5. Select Your Comfortable Date and Time</h1>
+
+          <div class="symbol-container">
+            <input
+              type="date"
+              name="birthday"
+              class="date"
+              placeholder="mm/dd/yyyy"
+            />
+          </div>
+          <div class="symbol-container">
+            <input type="time" name="appt" class="time" />
+          </div>
+          <br />
+        </div>
+
+        <img src="Images/Lab-Test/lab-test.jpg" alt="" />
+      </div>
+
+      <button form="lab-form">Reset</button>
+      <button form="lab-form">Submit</button>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+#main {
+    height: 700px;
+    padding: 80px ;
+    align-items: center;
+  }
+
+  #blog {
+    width: 95%;
+    box-shadow: 5px 5px 10px rgb(144, 138, 138);
+    display: flex;
+    overflow-y: auto;
+  }
+
+  #formContainer {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 80vh;
+  }
+
+  #formContainer form {
+    width: 100%;
+  }
+
+  #blog img {
+    width: 50%;
+    max-width: 100%;
+    height: 80vh;
+    position: sticky;
+    top: 0;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding: 15px;
+  }
+
+  #formContainer h1 {
+    padding: 10px;
+  }
+
+  .circular-radio {
+    width: 15px;
+    height: 15px;
+  }
+
+  .date,
+  .time {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding: 15px;
+    width: calc(50% - 5px); /* Adjust width for date and time inputs */
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .symbol-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .symbol {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  .violet-button {
+    background-color: rgb(175, 102, 243);
+    color: white;
+    border: none;
+  }
+  button {
+    position: relative;
+    left: 30%;
+    display: block;
+    margin: 20px;
+    width: 80px;
+    border-radius: 4px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    float: left;
+    border: none;
+    background-color: rgb(175, 102, 243);
+  }
+  #blog {
+    height: 80%;
+  }
